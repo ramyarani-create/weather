@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>VayuMausam AI - India's Premier AI Weather Monitoring &amp; Smart Travel Advisory</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-container":"#c0d8e8","surface-container-highest":"#202c42","surface-variant":"#1a2438","error":"#ff6b6b","tertiary":"#c8a0f0","on-tertiary-container":"#e8d0ff","surface-dim":"#0f1524","inverse-primary":"#0a4c6e","on-error":"#1a0000","tertiary-container":"#3d2060","inverse-on-surface":"#0a0e1a","error-container":"#3d1414","surface-container-lowest":"#0a0e1a","on-tertiary-fixed-variant":"#4d2a73","tertiary-fixed-dim":"#c8a0f0","on-primary-fixed":"#001f2e","surface-container-low":"#111828","inverse-surface":"#e0e8f0","on-primary-container":"#c8eaff","primary-fixed-dim":"#7dd3fc","surface-container-high":"#1a2438","on-secondary-fixed":"#0d1f2b","background":"#0a0e1a","on-secondary-fixed-variant":"#2a4a5e","surface-container":"#141c2e","surface-bright":"#1a2438","on-background":"#e0e8f0","primary-fixed":"#c8eaff","tertiary-fixed":"#e8d0ff","on-error-container":"#ffb3b3","on-surface-variant":"#a0b4c4","on-secondary":"#001f2e","secondary":"#88b4cc","on-surface":"#e0e8f0","secondary-container":"#1a3a4e","secondary-fixed-dim":"#88b4cc","surface-tint":"#7dd3fc","primary-container":"#0e4d6e","on-tertiary-fixed":"#1a002e","on-primary-fixed-variant":"#004d73","on-primary":"#001f2e","surface":"#0f1524","on-tertiary":"#1a002e","secondary-fixed":"#c0d8e8","outline":"#4a6070","primary":"#7dd3fc","outline-variant":"#2a3a48"},"borderRadius":{"DEFAULT":"0.5rem","lg":"1rem","xl":"1.5rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["Inter"],"display":["Inter"],"body":["Inter"],"label":["Inter"]},"fontSize":{}}}}</script></head><body class="bg-background font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-dim/75 backdrop-blur-2xl shadow-[0_4px_30px_rgba(10,14,26,0.8)]"><div class="h-20 w-full px-6 lg:px-10 flex items-center justify-between gap-4"><div class="flex items-center gap-3 shrink-0"><div class="flex items-center gap-2.5"><img alt="VayuMausam Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTEhdwn0dRbpSsvi4zpRuGuOTjSEE0SclB0X9l1otlIggY6kEYRkmyIJk-YY_8vnBtvqBgmvi3145Omob3Ptkd3RKeZBWul9UXvDGrTZe2012GMF5ENoDHeWcmj3wGHX9qVpIK3NfFBSFXYuIjmiLQQXAvosrsgBk5fVFcCFgRDoJAnhwqHeBuogppIW0_fuh4wmmB2nmAnSP7wdzOESznkgt8xD1uYHNXuHfDzJg"/><div class="flex flex-col"><span class="text-base font-headline font-bold tracking-tight text-on-surface flex items-center gap-1.5">VayuMausam <span class="text-xs px-1.5 py-0.5 rounded font-mono font-semibold bg-primary-container text-primary">AI</span></span><span class="text-[10px] font-medium tracking-wide text-primary-fixed-dim flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping inline-block"></span>India Live AI Engine</span></div></div></div><nav class="hidden xl:flex items-center p-1.5 rounded-full bg-surface-container/60 backdrop-blur-md" data-active-classes="bg-primary-container text-primary font-semibold"><a aria-current="page" class="px-3.5 py-1.5 rounded-full transition-all bg-primary-container text-primary font-semibold" data-path="home" href="#">Home</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="live-weather" href="#">Live Weather</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="7-day-forecast" href="#">7-Day Forecast</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="ai-recommendations" href="#">AI Recommendations</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="safety-radar" href="#">Safety Radar</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="popular-destinations" href="#">Popular Destinations</a><a class="px-3.5 py-1.5 rounded-full text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-path="smart-travel-tips" href="#">Smart Travel Tips</a></nav><div class="flex items-center gap-3 shrink-0"><div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container/70 backdrop-blur-md"><span class="flex h-2 w-2 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span></span><span class="text-xs font-medium text-on-surface">New Delhi</span><span class="text-xs text-on-surface-variant">•</span><span class="text-xs font-semibold text-primary">28°C Clear</span><span class="text-[11px] px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-mono">AQI 142 Moderate</span></div><button class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container/80 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all text-xs" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="text-xs font-medium">Search India</span><kbd class="px-1.5 py-0.5 text-[10px] rounded bg-surface-container-highest text-on-surface-variant font-mono">Cmd + K</kbd></button><div class="relative flex items-center"><button aria-label="Notifications" class="p-2 rounded-lg bg-surface-container/60 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-error opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-error"></span></span></button></div><div class="flex items-center gap-2 pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvGyO2Pi0zZJ1-s04nc49RC-YY7cJpYU2US21TEThgf8qvFg0UeGIwgkfNdAFMaOePF0-lVAp9kaMdqFjNuJFS9UgwWkdp7vok8prlSOU-W1JpK7WcS-xjxwC5sjPbuWghjkQIU2Pa6Tyxgf7c3BXmTHVcjLY7ewy3pVLDF45AtSJOqSiBRRx44AhNpD7ulIv5U_u7l-nfpcTlXv0tnfKumEyVgdqpJr2cdATJhc"/></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen relative z-10"><div class="flex flex-col w-full">
+<!-- Atmospheric Glow Mesh & Subtle Animation Backdrop -->
+<div class="relative w-full overflow-hidden bg-background">
+<!-- Ambient Aurora Glow Elements -->
+<div class="absolute -top-32 -left-40 w-96 h-96 rounded-full bg-primary/10 blur-[130px] pointer-events-none"></div>
+<div class="absolute top-96 -right-32 w-[30rem] h-[30rem] rounded-full bg-tertiary/10 blur-[150px] pointer-events-none"></div>
+<div class="absolute top-[48rem] left-1/3 w-[36rem] h-64 rounded-full bg-secondary-container/20 blur-[120px] pointer-events-none"></div>
+<!-- MAIN DASHBOARD WRAPPER -->
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+<!-- SECTION 1: HERO & INTELLIGENT SEARCH ENGINE -->
+<section class="relative w-full rounded-2xl bg-surface-container/60 backdrop-blur-2xl shadow-2xl p-6 sm:p-10 overflow-hidden">
+<!-- Subtle internal glow and meteorological grid line accent -->
+<div class="absolute top-0 right-0 w-2/5 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<path class="text-primary" d="M10 100 C 50 40, 150 160, 190 100" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path class="text-secondary" d="M10 130 C 60 70, 140 180, 190 120" stroke="currentColor" stroke-width="1"></path>
+<circle class="text-primary/40" cx="100" cy="100" r="70" stroke="currentColor" stroke-dasharray="6 6" stroke-width="0.8"></circle>
+<circle class="text-tertiary/40" cx="100" cy="100" r="35" stroke="currentColor" stroke-width="0.8"></circle>
+</svg>
+</div>
+<div class="relative z-10 max-w-4xl space-y-6">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary-container/40 text-primary text-xs font-mono">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>VayuMausam AI Synoptic Core v4.2 • Subcontinent Live Stream</span>
+</div>
+<div class="space-y-3">
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-headline font-bold text-on-surface tracking-tight leading-tight">
+              AI-Powered Meteorological Intelligence &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary">Smart Travel Guidance for India</span>
+</h1>
+<p class="text-sm sm:text-base text-on-surface-variant max-w-3xl leading-relaxed">
+              Real-time multi-source IMD synoptic radar analysis, hyper-local microclimate alerts, and predictive itinerary curation calibrated across 700+ Indian districts.
+            </p>
+</div>
+<!-- Interactive Search Bar Component -->
+<div class="pt-2 max-w-3xl space-y-3">
+<div class="relative flex items-center bg-surface-container-high/90 backdrop-blur-xl rounded-xl shadow-lg p-1.5 focus-within:shadow-[0_0_25px_rgba(125,211,252,0.2)] transition-all">
+<span class="material-symbols-outlined text-primary ml-3.5 mr-2 text-2xl">travel_explore</span>
+<input class="w-full bg-transparent text-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none py-2.5 px-1 font-body" id="search-input" placeholder="Enter Indian city or district (e.g. Manali, Munnar, Udaipur, Shillong, Varanasi)..." type="text"/>
+<button class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-xs font-medium text-secondary hover:text-on-surface hover:bg-surface-container-highest transition-all shrink-0" id="gps-btn" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">my_location</span>
+<span>Detect Location</span>
+</button>
+<button class="ml-2 px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-fixed-dim transition-all shadow-md shrink-0 flex items-center gap-1" type="button">
+<span>Analyze</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Auto-complete Search Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant/80 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">trending_up</span> Trending:
+              </span>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high/80 text-[11px] font-medium text-on-surface hover:bg-primary-container hover:text-primary transition-all" onclick="selectCity('Shimla', '14°C', 'Misty Alpine')" type="button">Shimla • 14°C</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high/80 text-[11px] font-medium text-on-surface hover:bg-primary-container hover:text-primary transition-all" onclick="selectCity('Goa', '29°C', 'Sunny Coast')" type="button">Goa • 29°C</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high/80 text-[11px] font-medium text-on-surface hover:bg-primary-container hover:text-primary transition-all" onclick="selectCity('Ooty', '18°C', 'Pleasant Hills')" type="button">Ooty • 18°C</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high/80 text-[11px] font-medium text-on-surface hover:bg-primary-container hover:text-primary transition-all" onclick="selectCity('Leh', '8°C', 'Crisp Cold')" type="button">Leh • 8°C</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high/80 text-[11px] font-medium text-on-surface hover:bg-primary-container hover:text-primary transition-all" onclick="selectCity('Jaipur', '32°C', 'Warm Sunshine')" type="button">Jaipur • 32°C</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: LIVE CITY WEATHER DASHBOARD -->
+<section class="space-y-4">
+<!-- City Selector Quick-Switch Strip -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">radar</span>
+<h2 class="text-xl font-headline font-semibold text-on-surface tracking-tight">Real-Time Indian Microclimate Observatories</h2>
+</div>
+<!-- Quick switch tabs -->
+<div class="flex items-center gap-1.5 p-1 rounded-xl bg-surface-container-low/90 backdrop-blur-md overflow-x-auto max-w-full" id="city-tabs">
+<button class="city-tab-btn active-tab px-3.5 py-1.5 rounded-lg text-xs font-medium text-primary bg-primary-container/60 transition-all shrink-0" onclick="changeActiveCity('delhi')">New Delhi / NCR</button>
+<button class="city-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all shrink-0" onclick="changeActiveCity('mumbai')">Mumbai</button>
+<button class="city-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all shrink-0" onclick="changeActiveCity('bengaluru')">Bengaluru</button>
+<button class="city-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all shrink-0" onclick="changeActiveCity('srinagar')">Srinagar</button>
+<button class="city-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all shrink-0" onclick="changeActiveCity('kochi')">Kochi</button>
+</div>
+</div>
+<!-- Primary Overview Card + 6 Metric Cards Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+<!-- Main Hero Weather Display Card (5 Cols) -->
+<div class="lg:col-span-5 rounded-2xl bg-surface-container/70 backdrop-blur-xl p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden shadow-xl">
+<div class="absolute -right-16 -top-16 w-52 h-52 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+<span class="text-base font-headline font-semibold text-on-surface" id="active-city-name">New Delhi, NCR</span>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5 font-mono">Lat 28.6139° N • Lon 77.2090° E</p>
+</div>
+<div class="px-2.5 py-1 rounded-md bg-secondary-container/50 text-[11px] font-mono text-secondary">
+                  Updated: Just Now
+                </div>
+</div>
+<!-- Main Temp Reading -->
+<div class="py-4 flex items-baseline gap-4">
+<span class="text-6xl sm:text-7xl font-headline font-bold text-on-surface tracking-tighter" id="active-city-temp">28°</span>
+<div class="space-y-1">
+<span class="text-xl font-medium text-primary">C</span>
+<p class="text-xs text-on-surface-variant" id="active-city-feels">Feels like 29°C</p>
+</div>
+</div>
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-surface-container-high/80 text-sm font-medium text-on-surface">
+<span class="material-symbols-outlined text-amber-300 text-xl" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span id="active-city-condition">Mostly Sunny &amp; Gentle Breeze</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                  Low cloud ceiling, calm northern air drift. Stable atmospheric window for inter-city travel &amp; monument visits.
+                </p>
+</div>
+</div>
+<!-- Micro Sun Trajectory Timeline -->
+<div class="mt-8 pt-4 bg-surface-container-low/50 rounded-xl p-3.5 space-y-2">
+<div class="flex items-center justify-between text-[11px] font-mono text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-amber-300">wb_twilight</span> Dawn 06:12 AM</span>
+<span class="text-primary font-semibold">Zenith 12:28 PM</span>
+<span class="flex items-center gap-1">Dusk 06:34 PM <span class="material-symbols-outlined text-[14px] text-amber-500">wb_twilight</span></span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-amber-400 via-primary to-tertiary h-full rounded-full w-3/5"></div>
+</div>
+</div>
+</div>
+<!-- 6 High-Fidelity Frosted Metric Cards (7 Cols) -->
+<div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-4">
+<!-- Metric 1: Humidity -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Humidity</span>
+<span class="material-symbols-outlined text-primary text-xl">humidity_mid</span>
+</div>
+<div class="my-2">
+<div class="text-2xl font-bold font-headline text-on-surface">54%</div>
+<div class="text-[11px] font-medium text-secondary">Optimal Balance</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[54%]"></div>
+</div>
+</div>
+<!-- Metric 2: Wind Speed & Direction -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Wind Drift</span>
+<span class="material-symbols-outlined text-secondary text-xl">air</span>
+</div>
+<div class="my-2">
+<div class="text-2xl font-bold font-headline text-on-surface">14 <span class="text-xs font-normal text-on-surface-variant">km/h</span></div>
+<div class="text-[11px] font-medium text-on-surface-variant">NW (Gusts 22 km/h)</div>
+</div>
+<div class="flex items-center gap-1 text-[11px] text-secondary font-mono">
+<span class="material-symbols-outlined text-[14px] rotate-45">navigation</span> Smooth Flights
+              </div>
+</div>
+<!-- Metric 3: Precipitation -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Precipitation</span>
+<span class="material-symbols-outlined text-primary text-xl">rainy</span>
+</div>
+<div class="my-2">
+<div class="text-2xl font-bold font-headline text-on-surface">0.0 <span class="text-xs font-normal text-on-surface-variant">mm</span></div>
+<div class="text-[11px] font-medium text-primary">0% chance next 6 hrs</div>
+</div>
+<div class="text-[10px] text-on-surface-variant font-mono">Next rain: &gt;72h</div>
+</div>
+<!-- Metric 4: Air Quality Index (AQI) -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">SAFAR AQI</span>
+<span class="material-symbols-outlined text-amber-400 text-xl">airwave</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-1.5">
+<span class="text-2xl font-bold font-headline text-amber-300">142</span>
+<span class="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded bg-amber-400/20 text-amber-300">Moderate</span>
+</div>
+<div class="text-[10px] text-on-surface-variant mt-1">PM2.5: 52 • PM10: 98 µg/m³</div>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-amber-400 h-full rounded-full w-[45%]"></div>
+</div>
+</div>
+<!-- Metric 5: UV Index -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">UV Exposure</span>
+<span class="material-symbols-outlined text-tertiary text-xl">wb_sunny</span>
+</div>
+<div class="my-2">
+<div class="flex items-baseline gap-1.5">
+<span class="text-2xl font-bold font-headline text-on-surface">6</span>
+<span class="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded bg-tertiary-container text-tertiary">High</span>
+</div>
+<div class="text-[10px] text-on-surface-variant mt-1">SPF 30+ advised mid-day</div>
+</div>
+<div class="text-[10px] text-tertiary font-mono">11 AM - 3 PM Alert</div>
+</div>
+<!-- Metric 6: Barometer & Visibility -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-4 flex flex-col justify-between shadow-md hover:bg-surface-container/80 transition-all">
+<div class="flex items-center justify-between">
+<span class="text-xs font-medium text-on-surface-variant">Barometer</span>
+<span class="material-symbols-outlined text-secondary text-xl">compress</span>
+</div>
+<div class="my-2">
+<div class="text-2xl font-bold font-headline text-on-surface">1012 <span class="text-xs font-normal text-on-surface-variant">hPa</span></div>
+<div class="text-[11px] font-medium text-on-surface-variant">Visibility: 7.5 km</div>
+</div>
+<div class="text-[10px] text-secondary font-mono">Stable anticyclone</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: 7-DAY PRECISION FORECAST & 24-HOUR HOURLY SCRUB -->
+<section class="rounded-2xl bg-surface-container/60 backdrop-blur-xl p-6 sm:p-8 space-y-8 shadow-xl">
+<!-- Header & Range Indicators -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">timeline</span>
+<h2 class="text-lg font-headline font-semibold text-on-surface">Synoptic Outlook: Hourly Scrub &amp; 7-Day Matrix</h2>
+</div>
+<p class="text-xs text-on-surface-variant mt-0.5">High-resolution ensemble modeling incorporating IMD automated stations.</p>
+</div>
+<div class="flex items-center gap-2 text-xs font-mono text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Temp Curve
+            <span class="w-2 h-2 rounded-full bg-secondary ml-2"></span> Rain Probability
+          </div>
+</div>
+<!-- 24-Hour Visual Temperature Curve Timeline -->
+<div class="space-y-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">schedule</span> 24-Hour Trajectory
+          </span>
+<div class="overflow-x-auto pb-2">
+<div class="min-w-[700px] grid grid-cols-8 gap-3">
+<!-- 06:00 AM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">06:00</span>
+<span class="material-symbols-outlined text-secondary text-xl">foggy</span>
+<span class="text-base font-bold text-on-surface">22°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/40 rounded-t h-[40%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Morning Mist</span>
+</div>
+<!-- 09:00 AM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">09:00</span>
+<span class="material-symbols-outlined text-amber-300 text-xl">wb_sunny</span>
+<span class="text-base font-bold text-on-surface">25°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/60 rounded-t h-[55%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Clear Sun</span>
+</div>
+<!-- 12:00 PM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">12:00</span>
+<span class="material-symbols-outlined text-amber-400 text-xl" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span class="text-base font-bold text-on-surface">28°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary rounded-t h-[80%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Warm Light</span>
+</div>
+<!-- 03:00 PM -->
+<div class="p-3 rounded-xl bg-primary-container/30 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-primary font-bold">15:00 NOW</span>
+<span class="material-symbols-outlined text-amber-400 text-xl" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span class="text-base font-bold text-primary">28°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary rounded-t h-[80%]"></div>
+</div>
+<span class="text-[10px] text-primary">Peak Day</span>
+</div>
+<!-- 06:00 PM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">18:00</span>
+<span class="material-symbols-outlined text-amber-500 text-xl">wb_twilight</span>
+<span class="text-base font-bold text-on-surface">26°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/70 rounded-t h-[65%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Golden Hour</span>
+</div>
+<!-- 09:00 PM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">21:00</span>
+<span class="material-symbols-outlined text-tertiary text-xl">clear_night</span>
+<span class="text-base font-bold text-on-surface">24°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/50 rounded-t h-[50%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Breezy</span>
+</div>
+<!-- 12:00 AM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">00:00</span>
+<span class="material-symbols-outlined text-tertiary text-xl">nights_stay</span>
+<span class="text-base font-bold text-on-surface">22°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/40 rounded-t h-[40%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Starlit</span>
+</div>
+<!-- 03:00 AM -->
+<div class="p-3 rounded-xl bg-surface-container-high/60 flex flex-col items-center text-center space-y-2">
+<span class="text-[11px] font-mono text-on-surface-variant">03:00</span>
+<span class="material-symbols-outlined text-secondary text-xl">bedtime</span>
+<span class="text-base font-bold text-on-surface">20°C</span>
+<div class="h-10 w-full flex items-end justify-center">
+<div class="w-2 bg-primary/30 rounded-t h-[30%]"></div>
+</div>
+<span class="text-[10px] text-on-surface-variant">Crisp Chill</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 7-Day Precision Forecast Grid -->
+<div class="space-y-3">
+<span class="text-xs font-semibold uppercase tracking-wider text-secondary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">calendar_view_week</span> 7-Day Predictive Trend
+          </span>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3">
+<!-- Day 1: Today -->
+<div class="p-4 rounded-xl bg-primary-container/20 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono font-bold uppercase text-primary">Today • Oct 24</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-amber-300 text-2xl" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span class="text-xs font-bold text-on-surface">30° / 20°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Sunny &amp; Crisp</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 0%</span>
+<span class="text-primary font-bold">9.8/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-primary/20 text-primary font-medium text-center">Ideal Travel</div>
+</div>
+</div>
+<!-- Day 2 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Fri • Oct 25</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-amber-300 text-2xl">partly_cloudy_day</span>
+<span class="text-xs font-bold text-on-surface">29° / 19°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Hazy Sunshine</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 5%</span>
+<span class="text-secondary font-bold">9.2/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium text-center">Sightseeing</div>
+</div>
+</div>
+<!-- Day 3 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Sat • Oct 26</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-primary text-2xl">cloud</span>
+<span class="text-xs font-bold text-on-surface">27° / 18°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Scattered Clouds</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 12%</span>
+<span class="text-secondary font-bold">8.7/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium text-center">Good Drives</div>
+</div>
+</div>
+<!-- Day 4 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Sun • Oct 27</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-primary text-2xl">rainy</span>
+<span class="text-xs font-bold text-on-surface">25° / 17°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Passing Drizzle</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-primary font-bold">Rain: 45%</span>
+<span class="text-tertiary font-bold">7.4/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-medium text-center">Carry Umbrella</div>
+</div>
+</div>
+<!-- Day 5 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Mon • Oct 28</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-amber-300 text-2xl">wb_sunny</span>
+<span class="text-xs font-bold text-on-surface">28° / 19°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Clear Skies</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 0%</span>
+<span class="text-primary font-bold">9.5/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium text-center">Optimal Travel</div>
+</div>
+</div>
+<!-- Day 6 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Tue • Oct 29</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-secondary text-2xl">foggy</span>
+<span class="text-xs font-bold text-on-surface">26° / 17°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Morning Fog</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 10%</span>
+<span class="text-secondary font-bold">8.1/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium text-center">Caution Roads</div>
+</div>
+</div>
+<!-- Day 7 -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 flex flex-col justify-between space-y-3">
+<div>
+<span class="text-[10px] font-mono uppercase text-on-surface-variant">Wed • Oct 30</span>
+<div class="flex items-center justify-between mt-2">
+<span class="material-symbols-outlined text-amber-300 text-2xl">sunny</span>
+<span class="text-xs font-bold text-on-surface">27° / 18°</span>
+</div>
+<p class="text-[11px] text-on-surface-variant mt-1">Temperate Sun</p>
+</div>
+<div class="space-y-1.5">
+<div class="flex justify-between items-center text-[10px] font-mono">
+<span class="text-secondary">Rain: 0%</span>
+<span class="text-primary font-bold">9.4/10</span>
+</div>
+<div class="text-[10px] px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-medium text-center">Optimal Travel</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: AI-POWERED TRAVEL RECOMMENDATIONS ENGINE -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container/50 text-tertiary text-xs font-mono mb-2">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> Synoptic Intelligence Matrix
+            </div>
+<h2 class="text-2xl font-headline font-bold text-on-surface">AI Engine Weather-Score Match: Where to Travel Right Now</h2>
+<p class="text-sm text-on-surface-variant mt-1">Cross-referencing live meteorological telemetry with comfort indices, rainfall radars, and crowd distributions.</p>
+</div>
+<span class="text-xs font-mono text-primary flex items-center gap-1 shrink-0">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> Refreshed 8m ago
+          </span>
+</div>
+<!-- 3 Curated Recommendation Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Recommendation 1: Himachal Haven -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Photorealistic cinematic shot of Tirthan Valley in Himachal Pradesh India with pristine clear river flowing between lush pine forests and dramatic snow-dusted Himalayan peaks under clear sapphire skies, crisp alpine morning light in glacial ice blue and deep forest tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtS208IHhofmVJCSHJkGa_p57RLkFP10w92bKfI5ZtB0Hq9ROPQIlO-d_IrzCqbcLmWpth6MSC7mMVeyclrN0JgktYHFUfv1Gnqb5hQFqSPYf8FWX5cK4ik1EZzghPqdlI4txCfjQ_CKvAN-88R0XIadl1s0ncqFFYqd2TW4bZJKF-dzDsS4ms0I2xKlud7FakDgg-9_GoyzloIOKoK2SmLYKanycHzd00GuRdGL4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Weather Match Badge -->
+<div class="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-primary text-sm">stars</span>
+<span class="text-xs font-mono font-bold text-primary">98% AI Match</span>
+</div>
+<!-- Quick Microclimate Pill -->
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-surface-dim/70 backdrop-blur-md text-[11px] font-mono text-on-surface">
+                16°C • Zero Rain • 1,600m
+              </div>
+</div>
+<div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<h3 class="text-lg font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Himachal Haven: Tirthan &amp; Jibhi Valley</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                  Crisp 16°C temperatures with zero precipitation forecasted. Autumn foliage is at peak vibrancy with unhindered high-altitude visibility.
+                </p>
+</div>
+<div class="space-y-3 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-high/80 text-xs space-y-1">
+<span class="text-[10px] font-mono uppercase text-secondary font-semibold">Recommended Prime Activity</span>
+<p class="text-on-surface font-medium">Trout fishing in pristine waters &amp; Great Himalayan National Park day treks.</p>
+</div>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="text-on-surface-variant font-mono">AQI: 22 (Pristine)</span>
+<button class="text-primary font-semibold hover:underline inline-flex items-center gap-1" type="button">
+<span>Curate Route</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendation 2: Western Ghats Bliss -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Scenic rolling tea plantations of Munnar Kerala covered in delicate morning mist with winding mountain roads and emerald green hills illuminated by soft diffused golden sunbeams, ethereal atmosphere in deep green and misty glacier blue palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT0Qh6tAW08vdoivtvZFpfy7Arxsc2btKZnal16pEzeQDzAcPA-lv4e6A-iCAO_ZQ8MSVui4p0L4Q0xw4AzoywInsg5kTNo9XcUWfKjPyKUKvMnjLckmSVVVmj_zG4LlzFJOO9ZGkeS8a76QOqAULGVq0cT9FdpaOpENqX2M6wBWHCaePP1i15RdMUpEccfmzxu46P7RH4gZTjRqrbmPJ6bAQO0x-iIRT8BRmAMQw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Weather Match Badge -->
+<div class="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-primary text-sm">stars</span>
+<span class="text-xs font-mono font-bold text-primary">94% AI Match</span>
+</div>
+<!-- Quick Microclimate Pill -->
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-surface-dim/70 backdrop-blur-md text-[11px] font-mono text-on-surface">
+                21°C • Light Mist • 1,532m
+              </div>
+</div>
+<div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<h3 class="text-lg font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Western Ghats Bliss: Munnar, Kerala</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                  Gentle 21°C balmy breezes with ethereal morning fog burning off by 10 AM. Trekking trails are firm and post-monsoon waterfalls running full.
+                </p>
+</div>
+<div class="space-y-3 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-high/80 text-xs space-y-1">
+<span class="text-[10px] font-mono uppercase text-secondary font-semibold">Recommended Prime Activity</span>
+<p class="text-on-surface font-medium">Highland tea estate sunrise walks &amp; Anamudi foothills exploration.</p>
+</div>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="text-on-surface-variant font-mono">AQI: 18 (Alpine Pure)</span>
+<button class="text-primary font-semibold hover:underline inline-flex items-center gap-1" type="button">
+<span>Curate Route</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendation 3: Royal Heritage -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl border border-primary/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-48 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Majestic City Palace Udaipur perched on calm Lake Pichola Rajasthan reflecting warm sunset amber lights with clear twilight purple-blue skies and luxury wooden heritage boats on water, tranquil regal architectural beauty" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAst2EQhW2iFQ6IcNCJVFI9pSSOMV_z9ksXsA6ybdZVJO5y4jfdRk7Kje4R1ZmF-Hildz400jvxZjUejgBFxrIvtvYbui7rvJ0cWeEEE6XXXh1UMo07XRFPvnz4xgDpZLQNKy4D8S2c22d2CVuzRMltQT4AcE19JIK3p4Ao2UTpWzmKoSNCgOt2z9abgwzqX_B0WYQbZjUTDQV5-WVaT1tjLqpX5kMC1WAHMWq9f0g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Weather Match Badge -->
+<div class="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5 shadow-md">
+<span class="material-symbols-outlined text-primary text-sm">stars</span>
+<span class="text-xs font-mono font-bold text-primary">91% AI Match</span>
+</div>
+<!-- Quick Microclimate Pill -->
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-surface-dim/70 backdrop-blur-md text-[11px] font-mono text-on-surface">
+                26°C • Lake Calm • 598m
+              </div>
+</div>
+<div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+<div class="space-y-2">
+<h3 class="text-lg font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Royal Heritage: Udaipur, Rajasthan</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                  Pleasant 26°C lakeside evenings without dry arid dust. Lake Pichola water level optimal for twilight heritage navigation.
+                </p>
+</div>
+<div class="space-y-3 pt-2">
+<div class="p-2.5 rounded-lg bg-surface-container-high/80 text-xs space-y-1">
+<span class="text-[10px] font-mono uppercase text-secondary font-semibold">Recommended Prime Activity</span>
+<p class="text-on-surface font-medium">Sunset boat cruises around Jagmandir &amp; City Palace nocturnal illuminations.</p>
+</div>
+<div class="flex items-center justify-between text-xs pt-1">
+<span class="text-on-surface-variant font-mono">AQI: 78 (Satisfactory)</span>
+<button class="text-primary font-semibold hover:underline inline-flex items-center gap-1" type="button">
+<span>Curate Route</span>
+<span class="material-symbols-outlined text-[14px]">arrow_outward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive AI Weather Advisor Widget -->
+<div class="rounded-2xl bg-surface-container-high/70 backdrop-blur-xl p-6 sm:p-7 shadow-xl space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary text-2xl">psychology</span>
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Ask VayuAI Travel Concierge</h3>
+<p class="text-xs text-on-surface-variant">Real-time micro-route risk verification powered by synoptic neural weights.</p>
+</div>
+</div>
+<span class="hidden sm:inline-block px-2.5 py-1 rounded bg-tertiary-container/40 text-tertiary text-[11px] font-mono">LLM-Weather Core Online</span>
+</div>
+<!-- Prompt bar -->
+<div class="relative flex items-center bg-surface-container/90 rounded-xl p-1.5 focus-within:shadow-[0_0_20px_rgba(200,160,240,0.15)] transition-all">
+<span class="material-symbols-outlined text-tertiary ml-3 mr-2 text-xl">chat_bubble</span>
+<input class="w-full bg-transparent text-xs sm:text-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none py-2 px-1" id="ai-prompt-input" type="text" value="Is it safe to drive to Spiti Valley this weekend via Atal Tunnel?"/>
+<button class="px-4 py-2 rounded-lg bg-tertiary text-on-tertiary text-xs font-semibold hover:bg-tertiary-fixed transition-all shrink-0" id="ai-ask-btn" type="button">
+              Query VayuAI
+            </button>
+</div>
+<!-- Interactive AI Response Card (Dynamic Simulation) -->
+<div class="p-4 rounded-xl bg-surface-container-lowest/80 space-y-2" id="ai-response-box">
+<div class="flex items-center justify-between text-xs font-mono">
+<span class="text-tertiary font-semibold flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> VayuAI Synoptic Advisory Verdict:
+              </span>
+<span class="text-on-surface-variant">Confidence: 96.4%</span>
+</div>
+<p class="text-xs text-on-surface leading-relaxed">
+<strong class="text-primary">CONDITIONAL CLEARANCE:</strong> Atal Tunnel North Portal to Sissu is clear with dry asphalt (12°C to 4°C). However, Kunzum Pass (4,551m) registers intermittent black ice forming after 17:00 IST. High-clearance 4x4 vehicles strongly advised; avoid night navigation. Return corridor via Shimla-Kaza remains fully open with mild headwinds.
+            </p>
+</div>
+<!-- Quick smart prompt capsules -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<span class="text-[11px] text-on-surface-variant font-mono">Try queries:</span>
+<button class="px-2.5 py-1 rounded-full bg-surface-container/80 text-[11px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" onclick="setAiPrompt('What is the fog visibility on Yamuna Expressway tomorrow 6 AM?')">Yamuna Expressway Fog (6 AM)</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container/80 text-[11px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" onclick="setAiPrompt('Will sudden cloudburst affect trek to Triund Dharamshala?')">Triund Dharamshala Trek Safety</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container/80 text-[11px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-all" onclick="setAiPrompt('Sea conditions for scuba diving in South Andaman?')">Havelock Island Scuba Sea State</button>
+</div>
+</div>
+</section>
+<!-- SECTION 5: CRITICAL TRAVEL SAFETY RADAR & ALERTS -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="p-2 rounded-xl bg-error-container/40 text-error">
+<span class="material-symbols-outlined text-2xl">warning</span>
+</div>
+<div>
+<h2 class="text-xl font-headline font-bold text-on-surface">Critical Multi-Hazard Radar &amp; Early Warnings</h2>
+<p class="text-xs text-on-surface-variant">Real-time alerts synchronized with National Disaster Management Authority (NDMA) &amp; IMD synoptic warnings.</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container/30 text-error text-xs font-mono font-semibold">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span> 3 Active National Advisories
+            </span>
+</div>
+</div>
+<!-- 4 Multi-Hazard Alert Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Alert 1: Konkan Coast Heavy Rain -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-xl p-5 space-y-3 shadow-md hover:bg-surface-container/90 transition-all">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-amber-400/20 text-amber-300 uppercase">Orange Alert IMD</span>
+<span class="material-symbols-outlined text-amber-400 text-xl">thunderstorm</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-sm font-headline font-bold text-on-surface">Konkan Coast &amp; Western Ghats</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Heavy isolated squalls and high soil saturation. High landslide susceptibility on Mumbai-Goa NH-66 ghat sections.
+              </p>
+</div>
+<div class="pt-2 text-[11px] font-mono text-amber-300 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Valid next 36 hours
+            </div>
+</div>
+<!-- Alert 2: Bay of Bengal Cyclone Watch -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-xl p-5 space-y-3 shadow-md hover:bg-surface-container/90 transition-all">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-primary/20 text-primary uppercase">Cyclone Watch</span>
+<span class="material-symbols-outlined text-primary text-xl">cyclone</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-sm font-headline font-bold text-on-surface">Bay of Bengal Depressional Surge</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Deep depression intensifying 420km SE of Paradip. Wind speeds 45-55 km/h. Coastal shipping and beach water sports suspended.
+              </p>
+</div>
+<div class="pt-2 text-[11px] font-mono text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sailing</span> Fishermen warning in force
+            </div>
+</div>
+<!-- Alert 3: Central India Heat Advisory -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-xl p-5 space-y-3 shadow-md hover:bg-surface-container/90 transition-all">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-error-container text-error uppercase">Heat Wave Warning</span>
+<span class="material-symbols-outlined text-error text-xl">thermostat</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-sm font-headline font-bold text-on-surface">Vidarbha &amp; Central Plains</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Midday temperatures peaking at 41.5°C across Nagpur &amp; Chandrapur corridors. Intense solar radiation between 12:00-15:30.
+              </p>
+</div>
+<div class="pt-2 text-[11px] font-mono text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">water_drop</span> Mandatory hydration protocol
+            </div>
+</div>
+<!-- Alert 4: Himalayan High Passes Status -->
+<div class="rounded-xl bg-surface-container/70 backdrop-blur-xl p-5 space-y-3 shadow-md hover:bg-surface-container/90 transition-all">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-secondary-container/60 text-secondary uppercase">Alpine Pass Radar</span>
+<span class="material-symbols-outlined text-secondary text-xl">landscape</span>
+</div>
+<div class="space-y-1">
+<h3 class="text-sm font-headline font-bold text-on-surface">Rohtang &amp; Khardung La Pass</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Rohtang open with dry road conditions. Khardung La open daylight only; Zojila subject to evening ice caution after 16:30.
+              </p>
+</div>
+<div class="pt-2 text-[11px] font-mono text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> BRO Cleared Route
+            </div>
+</div>
+</div>
+<!-- Emergency Rapid SOS Contacts Quick-Dial Bar -->
+<div class="p-4 rounded-xl bg-surface-container-low/90 backdrop-blur-md flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-error text-xl">sos</span>
+<span class="text-xs font-semibold text-on-surface">24x7 India Emergency Travel Weather Hotline Dispatch:</span>
+</div>
+<div class="flex flex-wrap items-center gap-3 text-xs font-mono">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface hover:text-primary transition-colors" href="tel:1078">
+<span class="material-symbols-outlined text-[16px] text-error">call</span> NDRF: <strong>1078</strong>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface hover:text-primary transition-colors" href="tel:1363">
+<span class="material-symbols-outlined text-[16px] text-primary">local_police</span> Tourism Police: <strong>1363</strong>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-highest text-on-surface hover:text-primary transition-colors" href="tel:1077">
+<span class="material-symbols-outlined text-[16px] text-secondary">cloud</span> IMD Met Hotline: <strong>1077</strong>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 6: POPULAR DESTINATIONS IN INDIA -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-container/40 text-primary text-xs font-mono mb-2">
+<span class="material-symbols-outlined text-[14px]">explore</span> Subcontinent Live Microclimates
+            </div>
+<h2 class="text-2xl font-headline font-bold text-on-surface">Popular Indian Destinations: Live Weather &amp; Tourism Status</h2>
+<p class="text-sm text-on-surface-variant mt-1">Multi-factor crowd analysis, solar comfort indexes, and current conditions across iconic geographic circuits.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">All Regions</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary" type="button">High Altitude</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-xs font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" type="button">Coastal</button>
+</div>
+</div>
+<!-- 5 Destination Cards Bento/Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Destination 1: Goa -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sun-drenched tropical beach in Palolem Goa India with turquoise ocean waves gently lapping golden sands, leaning coconut palm trees, clear bright skies with soft sea breeze in deep marine and ice blue aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsv0vZSnxrxF0LcU-7Em-h74mSkK-UDlPl3IkhUAcGOse4J2N7Ojb4V1qu1lGofLSIH2uM2JqwCcW98M248qJNndht_nRA5nmMQ37g875cwkvNoVJiroPXxjkuCrg0km2gsQ_GoUqfejTYnROkctLhIvCQ8d6DGllqp55Ke53lLzzYnF9NLlcCv-r0H7uDmJ6pEUDvJZpIXnjcjYMSWg7zLSFXW3cxHxgsO-TJXT8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-amber-300 text-sm" style="font-variation-settings: 'FILL' 1;">sunny</span>
+<span class="text-xs font-bold text-on-surface">29°C</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-[11px] font-mono text-secondary">
+                Crowd: Moderate
+              </div>
+<div class="absolute bottom-3 left-3 text-xs font-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">waves</span> Sea State: Calm (Swell 0.8m)
+              </div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Goa (Baga &amp; Palolem)</h3>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  Ideal coastal sunshine with pleasant evening sea breezes. Low humidity window perfect for water sports &amp; open-air dining.
+                </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs">
+<span class="text-secondary font-mono">Best Hour: 16:30 - 18:45</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+                  Microclimate
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination 2: Ladakh -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Pristine deep blue waters of high-altitude Pangong Lake in Ladakh India reflecting rugged towering Himalayan snow-capped mountains under crystal clear cobalt skies, crisp sharp mountain light in glacier ice blue palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY-O2gOiNkmLPVeHJzPkKq0U3McNfE-8pIO5bKFyKGQAar4oKpXr8b7LMMhcFC64ab_jOsdubK7bLyx0g6zMOvtcwIX1-TZM5B7QDTpskokSQNicb1rMaIG0gZIsokJcnmRKmk3uLM9-Fm1_iBptFVy2vn1CLcUC9rpZoqduNBVyqf9Zyh3NyR8Gg-INGU1_MrLZpW4zUyx1CruRkhtDEvAIKef_8RuKGdHYoDao0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">ac_unit</span>
+<span class="text-xs font-bold text-on-surface">9°C</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-[11px] font-mono text-primary">
+                Adventure Season
+              </div>
+<div class="absolute bottom-3 left-3 text-xs font-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">wb_sunny</span> High UV Index: 8 (Wear Polarized Glasses)
+              </div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Ladakh (Pangong &amp; Nubra)</h3>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  Clear cobalt skies with dry alpine wind. Cold nights dipping to -2°C. Khardung La and Chang La passes fully accessible.
+                </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs">
+<span class="text-secondary font-mono">Best Hour: 10:00 - 15:30</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+                  Microclimate
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination 3: Meghalaya -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ancient double decker living root bridge in Meghalaya Cherrapunji shrouded in gentle rainforest mist with emerald mossy boulders crystal clear jungle stream and lush tropical foliage, ethereal mystical damp atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyIcNP9pB77as5rVXw44jR6gdoqC_KVqs_Qr31LQE733HL3Snoldsxi9CJ1xVDId6LM25wzQwI_fgpKm5mJSoHp-YRrEaRw-XwutNIa131chFWXcNI9kbOQcSlUy790ljVImeTop0lzjnTGQMWGDxEDiW0ULcfCbstq0w2svY4JlTpQZZpEl4f4fYTlqbObQGDgujfsCwyagSFHYpGzX3VpK8QEf5lfgTKMohufww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">cloud</span>
+<span class="text-xs font-bold text-on-surface">19°C</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-[11px] font-mono text-secondary">
+                Crowd: Light
+              </div>
+<div class="absolute bottom-3 left-3 text-xs font-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">hiking</span> Root Bridges: Fully Dry &amp; Open
+              </div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Meghalaya (Cherrapunji &amp; Shillong)</h3>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  Intermittent ethereal highland mist without heavy monsoon rain. Optimal conditions for bamboo trail hikes and canyon vistas.
+                </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs">
+<span class="text-secondary font-mono">Best Hour: 08:00 - 13:00</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+                  Microclimate
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination 4: Varanasi Ghats -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dusk at the sacred Dashashwamedh Ghat Varanasi India on the banks of holy river Ganges with traditional oil lamps glowing warm incense smoke and twilight reflections on calm water, serene spiritual atmospheric aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdNZUHGKqbPmIfvhUO4SDDinG7L6QeS2y--tJV8oUyi8cE_fK7SUU3-fzwX9K8p9o2Rq72h-3BH5l32f-eOe55kTMWtiIZ7b-89xsEqfmwQqWL_Nh4e54LBw9n2FSiWA2wmdN3tqZtGVVjOUb_MAMRDiIm22Rw70F_PFaOk-0123Ah4T8r2wO5I_J04fISc62X1ZmyhDNmafo465Ztm3SQNKWGr8btS4pWspv7JnM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-amber-300 text-sm">wb_twilight</span>
+<span class="text-xs font-bold text-on-surface">27°C</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-[11px] font-mono text-tertiary">
+                Crowd: High
+              </div>
+<div class="absolute bottom-3 left-3 text-xs font-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-amber-300">flare</span> Evening Aarti Index: 10/10 Excellent
+              </div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Varanasi (Ganga Ghats)</h3>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  Gentle easterly river breeze with zero precipitation. Smooth dawn boating conditions; evening Aarti ceremonies fully uninterrupted.
+                </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs">
+<span class="text-secondary font-mono">Best Hour: 05:45 - 07:30</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+                  Microclimate
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination 5: Rishikesh -->
+<div class="group rounded-2xl bg-surface-container/60 backdrop-blur-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Turquoise clear waters of river Ganga flowing through lush Himalayan foothills in Rishikesh India with suspension bridge in background and white sand riverbanks under crisp azure skies, fresh outdoor mountain scenery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4Ubo7WhQ5xfGozwDgcRVscwXsyqWsRAF9vBq3VAnDAlvDWmyz7jaYQtMTy8wnAbUQUGf_iTygJLL3bjjUfg-JpPFgCnS6FTQydYm-s7whSZiAGYl-gQohmFZOvkp-lLplGSnk1K3yQnkYaP8-pxNUMs2dAohBdcVa_qVnKa2DOWSjLtEEiCNnQsqKHlkU3C3FWg3eYeJz_SBLdq0Qsbk_jGLZrkIWXMAbc8DlD6U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 left-3 px-3 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">water</span>
+<span class="text-xs font-bold text-on-surface">22°C</span>
+</div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-dim/80 backdrop-blur-md text-[11px] font-mono text-primary">
+                Peak Rafting
+              </div>
+<div class="absolute bottom-3 left-3 text-xs font-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">kayaking</span> River Flow: Grade III Active
+              </div>
+</div>
+<div class="p-5 space-y-3">
+<div>
+<h3 class="text-base font-headline font-bold text-on-surface">Rishikesh (Ganga Valley)</h3>
+<p class="text-xs text-on-surface-variant mt-1 leading-relaxed">
+                  Pristine turquoise water clarity with temperate mountain air. Ideal rafting current from Shivpuri to NIM Beach. Zero flash flood risk.
+                </p>
+</div>
+<div class="pt-2 flex items-center justify-between text-xs">
+<span class="text-secondary font-mono">Best Hour: 09:00 - 16:00</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-xs font-medium text-primary hover:bg-primary hover:text-on-primary transition-all" type="button">
+                  Microclimate
+                </button>
+</div>
+</div>
+</div>
+<!-- Destination 6: Live Subcontinent Interactive Micro-Map Preview -->
+<div class="rounded-2xl bg-surface-container/70 backdrop-blur-xl p-5 flex flex-col justify-between shadow-lg">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-xs font-mono font-semibold uppercase text-primary">Dynamic Geospatial View</span>
+<span class="material-symbols-outlined text-primary text-xl">map</span>
+</div>
+<h3 class="text-base font-headline font-bold text-on-surface">Subcontinent Radar Layer</h3>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Inspect live Doppler precipitation reflectivity, cloud tops, and thermal wind vectors across all 28 states.
+              </p>
+</div>
+<div class="w-full h-32 bg-surface-container-highest rounded-xl overflow-hidden relative mt-3" data-location="New Delhi, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmrJu4WxhhxK8434vDvMbzk2xwjM1Cqxb-k2B0-k7yg9hWRMwKOtWOeKNBsWa1nYApUE_G_AYCN4bOEH5s0nr6x_ODWRQf3FEgnaMoQBG6GYrSI9T_mqoII-6buB0D_WUR_hZC4damMCl6T8AHtEAvX5YdDYn3EEvRXDjbGIOGPhl_9zjQsWcK9lEUnzJC44gDHhs9vqHFuGo2tYLBViJso0Val-PiIKZ_wU3sprk')">
+<div class="absolute inset-0 bg-primary-container/20 backdrop-blur-[2px] flex items-center justify-center">
+<div class="px-3 py-1.5 rounded-full bg-surface-dim/90 backdrop-blur-md text-[11px] font-mono text-primary flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Live Doppler Echo Active
+                </div>
+</div>
+</div>
+<div class="pt-4 flex items-center justify-between">
+<span class="text-[11px] text-on-surface-variant font-mono">INSAT-3DR Geostationary Sync</span>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-xs font-semibold hover:bg-primary-fixed-dim transition-all" type="button">
+                Expand Full Radar
+              </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: SMART TRAVEL TIPS & AI-CURATED PACKING GUIDE -->
+<section class="space-y-6">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/50 text-secondary text-xs font-mono mb-2">
+<span class="material-symbols-outlined text-[14px]">checklist</span> Autonomous Travel Preparedness
+            </div>
+<h2 class="text-2xl font-headline font-bold text-on-surface">Smart Travel Advisory &amp; AI Microclimate Packing Kit</h2>
+<p class="text-sm text-on-surface-variant mt-1">Algorithmic suggestions synthesized from forecast delta, temperature swing, and atmospheric pressure.</p>
+</div>
+<button class="px-4 py-2 rounded-xl bg-surface-container-high text-xs font-medium text-primary hover:bg-primary-container transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span> Export Travel Briefing PDF
+          </button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Category 1: Packing Assistant -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-5 space-y-4 shadow-md">
+<div class="flex items-center gap-2.5 text-primary">
+<span class="material-symbols-outlined text-2xl">backpack</span>
+<h3 class="text-sm font-headline font-bold text-on-surface">Packing Checklist</h3>
+</div>
+<ul class="space-y-2 text-xs text-on-surface-variant font-body">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check</span>
+<span>Breathable cottons for plains (28°C noon highs)</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check</span>
+<span>Mid-weight fleece or windcheater for evening hill transit</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check</span>
+<span>Broad-spectrum SPF 50+ sunscreen &amp; polarized UV-400 eyewear</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">check</span>
+<span>Compact stormproof umbrella for sporadic Western Ghats showers</span>
+</li>
+</ul>
+</div>
+<!-- Category 2: Ideal Timing Windows -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-5 space-y-4 shadow-md">
+<div class="flex items-center gap-2.5 text-amber-300">
+<span class="material-symbols-outlined text-2xl">timelapse</span>
+<h3 class="text-sm font-headline font-bold text-on-surface">Ideal Timing Windows</h3>
+</div>
+<div class="space-y-3 text-xs text-on-surface-variant font-body">
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 space-y-1">
+<div class="text-on-surface font-semibold flex items-center justify-between">
+<span>Golden Hour Photography</span>
+<span class="text-primary font-mono text-[11px]">06:20 &amp; 17:40</span>
+</div>
+<p class="text-[11px]">Best diffusion index; low haze over architectural monuments.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-high/60 space-y-1">
+<div class="text-on-surface font-semibold flex items-center justify-between">
+<span>Monument &amp; Fort Treks</span>
+<span class="text-secondary font-mono text-[11px]">07:00 - 10:30</span>
+</div>
+<p class="text-[11px]">Avoid zenith heat; stone heat absorption minimal before 11 AM.</p>
+</div>
+</div>
+</div>
+<!-- Category 3: Road & Expressway Advisory -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-5 space-y-4 shadow-md">
+<div class="flex items-center gap-2.5 text-secondary">
+<span class="material-symbols-outlined text-2xl">traffic</span>
+<h3 class="text-sm font-headline font-bold text-on-surface">Road &amp; Transit Advisory</h3>
+</div>
+<div class="space-y-2.5 text-xs text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">info</span>
+<span><strong>Yamuna &amp; Eastern Peripheral:</strong> Normal visibility (7km); no morning fog hazard currently reported.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">info</span>
+<span><strong>Manali-Leh Highway:</strong> Night temperatures near sub-zero. Avoid transit post 17:00 due to black ice formation.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">info</span>
+<span><strong>Flight Hubs (DEL/BOM):</strong> On-time performance index 94% with calm runway shear.</span>
+</div>
+</div>
+</div>
+<!-- Category 4: Health & AQI Advisory -->
+<div class="rounded-xl bg-surface-container/60 backdrop-blur-xl p-5 space-y-4 shadow-md">
+<div class="flex items-center gap-2.5 text-tertiary">
+<span class="material-symbols-outlined text-2xl">health_and_safety</span>
+<h3 class="text-sm font-headline font-bold text-on-surface">Health &amp; AQI Advisory</h3>
+</div>
+<div class="space-y-3 text-xs text-on-surface-variant">
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-high/60">
+<span>Daily Hydration Goal</span>
+<span class="font-mono text-tertiary font-bold">2.8 - 3.2 Liters</span>
+</div>
+<p class="text-[11px] leading-relaxed">
+                Metropolitan travelers with sensitive respiratory pathways should carry N95 respirators during early morning peak smog hours (06:00 - 08:30) in North India plains.
+              </p>
+<div class="flex items-center gap-1.5 text-primary text-[11px] font-mono">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Mountain regions: AQI &lt; 25 Pristine
+              </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: TECHNICAL ARCHITECTURE & LIVE SYNOPTIC DATA FEED -->
+<section class="rounded-xl bg-surface-container-lowest/90 backdrop-blur-md p-4 sm:p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-3 text-xs text-on-surface-variant">
+<div class="flex items-center gap-2 text-primary font-mono font-semibold">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span>SYNOPTIC DATA STREAM ACTIVE</span>
+</div>
+<span>•</span>
+<span>Synced with IMD Doppler Radar Network (37 radars)</span>
+<span>•</span>
+<span>ISRO INSAT-3DR Geostationary Imager</span>
+<span>•</span>
+<span>ECMWF IFS-HRES 0.1° Resolution Models</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-mono text-secondary">
+<span>Engine Precision: 98.7%</span>
+<span>•</span>
+<span class="text-primary">Pipeline Ping: 12ms</span>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic City Switching Logic for Interactive Demonstration
+  const cityData = {
+    delhi: {
+      name: "New Delhi, NCR",
+      coords: "Lat 28.6139° N • Lon 77.2090° E",
+      temp: "28°",
+      feels: "Feels like 29°C",
+      condition: "Mostly Sunny & Gentle Breeze"
+    },
+    mumbai: {
+      name: "Mumbai, Maharashtra",
+      coords: "Lat 19.0760° N • Lon 72.8777° E",
+      temp: "31°",
+      feels: "Feels like 34°C",
+      condition: "Humid Coastal Sunshine & Moderate Sea Breeze"
+    },
+    bengaluru: {
+      name: "Bengaluru, Karnataka",
+      coords: "Lat 12.9716° N • Lon 77.5946° E",
+      temp: "24°",
+      feels: "Feels like 24°C",
+      condition: "Pleasant Highland Breeze & Overcast Clouds"
+    },
+    srinagar: {
+      name: "Srinagar, Jammu & Kashmir",
+      coords: "Lat 34.0837° N • Lon 74.7973° E",
+      temp: "15°",
+      feels: "Feels like 14°C",
+      condition: "Crisp Chilly Alpine Air & Clear Mountain Vistas"
+    },
+    kochi: {
+      name: "Kochi, Kerala",
+      coords: "Lat 9.9312° N • Lon 76.2673° E",
+      temp: "29°",
+      feels: "Feels like 32°C",
+      condition: "Tropical Sea Winds & Passing Low Rain Clouds"
+    }
+  };
+
+  function changeActiveCity(cityKey) {
+    const data = cityData[cityKey];
+    if (!data) return;
+
+    // Update texts
+    const nameEl = document.getElementById("active-city-name");
+    const tempEl = document.getElementById("active-city-temp");
+    const feelsEl = document.getElementById("active-city-feels");
+    const condEl = document.getElementById("active-city-condition");
+
+    if (nameEl) nameEl.textContent = data.name;
+    if (tempEl) tempEl.textContent = data.temp;
+    if (feelsEl) feelsEl.textContent = data.feels;
+    if (condEl) condEl.textContent = data.condition;
+
+    // Update active tab buttons styling
+    const tabs = document.querySelectorAll(".city-tab-btn");
+    tabs.forEach(tab => {
+      tab.classList.remove("text-primary", "bg-primary-container/60");
+      tab.classList.add("text-on-surface-variant");
+    });
+
+    if (event && event.currentTarget) {
+      event.currentTarget.classList.add("text-primary", "bg-primary-container/60");
+      event.currentTarget.classList.remove("text-on-surface-variant");
+    }
+  }
+
+  function selectCity(city, temp, condition) {
+    const searchInput = document.getElementById("search-input");
+    if (searchInput) searchInput.value = `${city}, India`;
+
+    const nameEl = document.getElementById("active-city-name");
+    const tempEl = document.getElementById("active-city-temp");
+    const condEl = document.getElementById("active-city-condition");
+
+    if (nameEl) nameEl.textContent = `${city}, India`;
+    if (tempEl) tempEl.textContent = temp;
+    if (condEl) condEl.textContent = condition;
+  }
+
+  function setAiPrompt(text) {
+    const input = document.getElementById("ai-prompt-input");
+    if (input) {
+      input.value = text;
+      simulateAiResponse(text);
+    }
+  }
+
+  function simulateAiResponse(query) {
+    const box = document.getElementById("ai-response-box");
+    if (!box) return;
+
+    box.innerHTML = `
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="text-tertiary font-semibold flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span> Analyzing Synoptic Models for: "${query.substring(0, 30)}..."
+        </span>
+        <span class="text-primary">Calculating Neural Risk...</span>
+      </div>
+      <p class="text-xs text-on-surface leading-relaxed mt-1 animate-pulse">
+        Evaluating real-time IMD reflectivity, mountain wind shear, and road surface humidity...
+      </p>
+    `;
+
+    setTimeout(() => {
+      box.innerHTML = `
+        <div class="flex items-center justify-between text-xs font-mono">
+          <span class="text-tertiary font-semibold flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> VayuAI Synoptic Advisory Verdict:
+          </span>
+          <span class="text-on-surface-variant">Confidence: 98.1%</span>
+        </div>
+        <p class="text-xs text-on-surface leading-relaxed mt-1">
+          <strong class="text-primary">SAFE TRAVEL WINDOW CONFIRMED:</strong> Microclimate parameters indicate optimal atmospheric stability over the corridor. Humidity remains below threshold for dense fog formation; solar irradiance is moderate. Transit cleared without seasonal weather disruptions.
+        </p>
+      `;
+    }, 800);
+  }
+
+  // Hook AI Ask button
+  document.addEventListener("DOMContentLoaded", () => {
+    const askBtn = document.getElementById("ai-ask-btn");
+    const input = document.getElementById("ai-prompt-input");
+    if (askBtn && input) {
+      askBtn.addEventListener("click", () => {
+        if (input.value.trim().length > 0) {
+          simulateAiResponse(input.value);
+        }
+      });
+    }
+
+    const gpsBtn = document.getElementById("gps-btn");
+    if (gpsBtn) {
+      gpsBtn.addEventListener("click", () => {
+        selectCity("New Delhi (Detected GPS)", "28°C", "Mostly Sunny & Gentle Breeze");
+      });
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest/90 backdrop-blur-xl mt-auto relative z-20"><div class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-14"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10"><div class="lg:col-span-2 space-y-4"><div class="flex items-center gap-2.5"><img alt="VayuMausam Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTEhdwn0dRbpSsvi4zpRuGuOTjSEE0SclB0X9l1otlIggY6kEYRkmyIJk-YY_8vnBtvqBgmvi3145Omob3Ptkd3RKeZBWul9UXvDGrTZe2012GMF5ENoDHeWcmj3wGHX9qVpIK3NfFBSFXYuIjmiLQQXAvosrsgBk5fVFcCFgRDoJAnhwqHeBuogppIW0_fuh4wmmB2nmAnSP7wdzOESznkgt8xD1uYHNXuHfDzJg"/><span class="text-base font-headline font-bold text-on-surface tracking-tight">VayuMausam AI</span></div><p class="text-xs text-on-surface-variant leading-relaxed max-w-sm">India's Next-Gen Autonomous Weather Intelligence &amp; Intelligent Travel Risk Orchestrator. Integrating deep learning synoptic models with real-time high-resolution radar sensors across the Indian subcontinent.</p><div class="pt-2 flex flex-col gap-2"><span class="text-[11px] font-semibold tracking-wider uppercase text-on-surface-variant">Data Ingestion Architecture</span><p class="text-xs text-secondary">Indian Meteorological Department (IMD) • ISRO INSAT-3DR Geostationary Satellites • Doppler Weather Radar Network</p></div><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container/30 text-primary text-xs font-mono"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>All India Radar Systems Active • Latency 14ms</div></div><div class="space-y-3"><h3 class="text-xs font-semibold uppercase tracking-wider text-on-surface">Quick Destinations</h3><ul class="space-y-2 text-xs text-on-surface-variant"><li class="hover:text-primary transition-colors cursor-pointer">Himalayas &amp; Ladakh Passes</li><li class="hover:text-primary transition-colors cursor-pointer">Western Ghats Monsoon Route</li><li class="hover:text-primary transition-colors cursor-pointer">Coastal Goa &amp; Konkan Belt</li><li class="hover:text-primary transition-colors cursor-pointer">Rajasthan Desert Circuit</li><li class="hover:text-primary transition-colors cursor-pointer">North-East Meghalaya Corridors</li></ul></div><div class="space-y-3"><h3 class="text-xs font-semibold uppercase tracking-wider text-on-surface">Intelligent Modules</h3><ul class="space-y-2 text-xs text-on-surface-variant"><li class="hover:text-primary transition-colors cursor-pointer">Precipitation Nowcasting</li><li class="hover:text-primary transition-colors cursor-pointer">Severe Thunderstorm Alert (Damini)</li><li class="hover:text-primary transition-colors cursor-pointer">Air Quality Index (SAFAR)</li><li class="hover:text-primary transition-colors cursor-pointer">Mountain Pass Fog Predictor</li><li class="hover:text-primary transition-colors cursor-pointer">Coastal Cyclone Tracker</li></ul></div><div class="space-y-3"><h3 class="text-xs font-semibold uppercase tracking-wider text-on-surface">Severe Helpline &amp; SOS</h3><div class="p-3.5 rounded-xl bg-surface-container/70 space-y-2.5"><div class="flex items-center gap-2 text-error"><span class="material-symbols-outlined text-[18px]">emergency</span><span class="text-xs font-bold tracking-wide">NDRF Central Hotline</span></div><div class="text-sm font-mono font-bold text-on-surface">Toll-Free: 1078</div><p class="text-[11px] text-on-surface-variant">Disaster Management Ops Centre 24x7 active for flash floods &amp; landslips.</p></div></div></div><div class="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant"><p>© 2025 VayuMausam AI. Built for national safety &amp; precision travel planning.</p><div class="flex items-center gap-6"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Synoptic Terms</a><a class="hover:text-on-surface transition-colors" href="#">API Documentation</a><a class="hover:text-on-surface transition-colors" href="#">Govt Data Portal</a></div></div></div></footer></body></html>
